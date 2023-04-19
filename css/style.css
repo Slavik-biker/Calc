@@ -1,0 +1,82 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+body {
+	background-color: #6902;
+}
+
+.wrapper {
+   max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 50px 70px;
+	row-gap: 20px;
+	column-gap: 20px;
+	
+	
+}
+.values {
+
+}
+button {
+	display: block;
+}
+.values__input {
+	display: inline-block;
+	margin-right: 20px;
+}
+.value {
+	
+}
+.values__clear {
+	display: inline-block;
+	margin-right: 20px;
+}
+.clear {
+
+}
+.values__result {
+	display: inline-block;
+	margin-right: 30px;
+}
+.actions {
+	display: flex;
+	flex-direction: column;
+	column-gap: 15px;
+}
+.actions__sum, .actions__extract, .actions__multiple, .actions__division {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 370px;
+   height: 40px;
+	border-radius: 20px;
+	background-color: #567;
+	margin-bottom: 10px;
+}
+
+.actions__division {
+	margin-bottom: 0;
+}
+.actions__sum p, .actions__extract p, .actions__multiple p, .actions__division p { 
+   font-weight: 500;
+	font-size: 20px;
+	color: #fff;
+}
+.actions__extract {
+}
+.actions__multiple {
+}
+.actions__division {
+}

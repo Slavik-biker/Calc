@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Calculator</h1>
+		<div class="values">
+			<div class="values__input"><input id="text" type="number" class="value__num" id="myInput"></div>
+			<div class="values__result"><span></span></div>
+			<div class="values__clear"><input type="button" value="clear" onclick="clear();"></div>
+		</div>
+		<div class="actions">
+			<button class="actions__sum" onclick="getSum();"><p>Sum</p></button>
+			<button class="actions__extract" onclick="getExtract();"><p>Extract</p></button>
+			<button class="actions__multiple" onclick="getMultiply();"><p>Multiple</p></button>
+			<button class="actions__division" onclick="getDivision();"><p>Division</p></button>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
